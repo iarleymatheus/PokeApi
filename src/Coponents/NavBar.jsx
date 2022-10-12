@@ -28,6 +28,7 @@ width: 100%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
+background-color:#8ECAE6 ;
   .nav-img{
     display: inline-block;
     height: 7vh;
