@@ -11,6 +11,7 @@ function Pokedex() {
     axios.get(url).then((response) => {
       const pokemons = response.data;
       setPokemons(pokemons.results);
+      console.log(`retorno ${Pokemons}`)
     });
   }, []);
   return (

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import axios from 'axios'
 
 
-function CardPokemon(url) {
-  const urlPoke = url.url
+function CardPokemon(props) {
+  const urlPoke = props.url;
   const [DataPokemon , setDataPokemon] = useState([]);
   
   useEffect(()=>{
@@ -22,21 +22,17 @@ function CardPokemon(url) {
   
   return (
     <PokemonStyle>
-      {DataPokemon ? DataPokemon.map((dataPokemon)=>{
-        return (
-          <div key={dataPokemon.id} className='pokemon-Card'>
-              <div className='pokemon-info'>
-                <p>{dataPokemon.name}</p>
-                <h3></h3>
-                <div className="power">
-                  <div className="power1"></div>
-                  <div className="power2"></div>
-                </div>
-             </div>
-          </div>
+      {!DataPokemon ? <p>Carregando....</p> : DataPokemon.map((Pokemon)=>{
+                          return (
+                            <div key={Pokemon.id} className='pokemon-Card'>
+                                <div className='pokemon-info'>
+                                  <p>{Pokemon.name}</p>
+                                  <h3></h3>
+                               </div>
+                            </div>
         )  
 
-      }) : null }
+      })}
     </PokemonStyle>
   )
 }
