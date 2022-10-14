@@ -4,23 +4,27 @@ import axios from 'axios'
 
 
 function CardPokemon(url) {
-  const urlPoke = url;
+  const urlPoke = url.url
   const [DataPokemon , setDataPokemon] = useState([]);
   
   useEffect(()=>{
-  
+  try {
     axios.get(urlPoke).then((response) => {
-      const pokemonStatus = response.data;
-      setDataPokemon(pokemonStatus);
-      console.log(pokemonStatus)
+      const pokemonInfo = response.data;
+      setDataPokemon(pokemonInfo);
+      console.log(pokemonInfo)
     });
+  } catch (error) {
+    console.log(`erro ${error}`)
+  }
+    
   }, []);
   
   return (
     <PokemonStyle>
       {DataPokemon ? DataPokemon.map((dataPokemon)=>{
         return (
-          <div className='pokemon-Card'>
+          <div key={dataPokemon.id} className='pokemon-Card'>
               <div className='pokemon-info'>
                 <p>{dataPokemon.name}</p>
                 <h3></h3>

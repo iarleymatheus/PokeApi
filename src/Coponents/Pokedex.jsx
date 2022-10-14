@@ -29,7 +29,8 @@ function Pokedex() {
         ) : (
           Pokemons.map((pokemon) => {
             return (
-               <CardPokemon url={pokemon.url} /> 
+
+               <CardPokemon key={pokemon.name} url={pokemon.url} /> 
             );
           })
         )}
