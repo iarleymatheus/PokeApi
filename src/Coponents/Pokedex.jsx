@@ -6,13 +6,22 @@ import CardPokemon from "./CardPokemon";
 function Pokedex() {
   const [Pokemons, setPokemons] = useState([]);
 
+  const BuscarPokemons = async ()=>{
+    const data = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=50&offset=0`).then((response)=>{
+        return response.data;
+    })
+    const promises = data.results.map(async (pokemon)=>{
+        return await axios.get(pokemon.url).then((res)=>res.data)
+    })
+    const results = await Promise.all(promises);
+    setPokemons(results)
+    console.log(results)
+  }
+
+
   useEffect(() => {
-    let url = `https://pokeapi.co/api/v2/pokemon?limit=50&offset=0`;
-    axios.get(url).then((response) => {
-      const pokemons = response.data;
-      setPokemons(pokemons.results);
-      console.log(`retorno ${Pokemons}`)
-    });
+    BuscarPokemons();
+    console.log('carregou')
   }, []);
   return (
     <PokedexStyle>
@@ -31,7 +40,7 @@ function Pokedex() {
           Pokemons.map((pokemon) => {
             return (
 
-               <CardPokemon key={pokemon.name} url={pokemon.url} /> 
+               <CardPokemon key={pokemon.id} pokemon={pokemon} /> 
             );
           })
         )}

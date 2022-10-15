@@ -1,38 +1,23 @@
-import React,{useState, useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components'
-import axios from 'axios'
+
 
 
 function CardPokemon(props) {
-  const urlPoke = props.url;
-  const [DataPokemon , setDataPokemon] = useState([]);
-  
-  useEffect(()=>{
-  try {
-    axios.get(urlPoke).then((response) => {
-      const pokemonInfo = response.data;
-      setDataPokemon(pokemonInfo);
-      console.log(pokemonInfo)
-    });
-  } catch (error) {
-    console.log(`erro ${error}`)
-  }
-    
-  }, []);
+ const {pokemon} = props
   
   return (
-    <PokemonStyle>
-      {!DataPokemon ? <p>Carregando....</p> : DataPokemon.map((Pokemon)=>{
-                          return (
-                            <div key={Pokemon.id} className='pokemon-Card'>
-                                <div className='pokemon-info'>
-                                  <p>{Pokemon.name}</p>
-                                  <h3></h3>
-                               </div>
-                            </div>
-        )  
-
-      })}
+    <PokemonStyle key={pokemon.id}> 
+          <div key={pokemon.id} className='pokemon-Card'>
+              <div className='pokemon-info'>
+                <p>{pokemon.name}</p>
+                <h3></h3>
+                <div className="power">
+                  <div className="power1"></div>
+                  <div className="power2"></div>
+                </div>
+             </div>
+          </div>
     </PokemonStyle>
   )
 }

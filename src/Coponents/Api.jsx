@@ -16,3 +16,11 @@ export const GetPokemonsApi = async (limit=50, offset=0)=>{
         console.log(`erro:${error}`)
     }
 }
+export const GetPokemonApi = async (url)=>{
+    try {
+        const response = await fetch(url);
+        return response.json();
+    } catch (error) {
+        console.log(`erro:${error}`)
+    }
+}
