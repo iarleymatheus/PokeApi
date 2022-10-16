@@ -46,7 +46,7 @@ function SearchPokemon() {
 
 export default SearchPokemon;
 const SearcheStyle = styled.div`
-width: 20%;
+width: 50%;
 display: flex;
 justify-content: center;
 height: 30%;
@@ -77,6 +77,10 @@ height: 30%;
 .pokemon{
     display: block;
 }
-
-
+@media (max-width: 600px){
+  width: 60%;
+}
+@media (max-width: 900px){
+  width: 60%;
+}
 `;

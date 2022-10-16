@@ -25,12 +25,18 @@ export default NavBar;
 const NavBarStyle = styled.nav`
 height: 10vh;
 width: 100%;
-display: flex;
-justify-content: space-evenly;
+display: fixed;
+justify-content: space-between;
 align-items: center;
 background-color:#8ECAE6 ;
   .nav-img{
     display: inline-block;
     height: 7vh;
+    padding: 5px;
+  }
+  @media (max-width: 600px){
+    .nav-img{
+      height: 5vh;
+    }
   }
 `;
