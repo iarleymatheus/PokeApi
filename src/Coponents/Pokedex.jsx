@@ -5,10 +5,13 @@ import CardPokemon from "./CardPokemon";
 
 function Pokedex() {
   const [Pokemons, setPokemons] = useState([]);
+  const [pageStatus , setPageStatus] = useState(0)
 
-  const BuscarPokemons = async ()=>{
-    const data = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=50&offset=0`).then((response)=>{
-        return response.data;
+  const BuscarPokemons = async (offset=pageStatus ,limit=25)=>{
+    
+    const data = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`).then((response)=>{
+    setPageStatus(pageStatus+25)    
+     return response.data 
     })
     const promises = data.results.map(async (pokemon)=>{
         return await axios.get(pokemon.url).then((res)=>res.data)
@@ -17,8 +20,14 @@ function Pokedex() {
     setPokemons(results)
     console.log(results)
   }
-
-
+  
+  function nextPage(){
+     
+     BuscarPokemons(pageStatus)   
+  }
+  function backPage(){
+    BuscarPokemons(pageStatus-50)   
+  }
   useEffect(() => {
     BuscarPokemons();
     console.log('carregou')
@@ -29,7 +38,8 @@ function Pokedex() {
         <div>
           <h1>Pokedex</h1>
         </div>
-        <div>Proximo anterior</div>
+        <div onClick={backPage}>anterior</div>
+        <div onClick={nextPage}>Proximo</div>
       </div>
       <div className="pokemons">
         {!Pokemons ? (
