@@ -10,7 +10,7 @@ function Pokedex() {
   const BuscarPokemons = async (offset=pageStatus ,limit=25)=>{
     
     const data = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`).then((response)=>{
-    setPageStatus(pageStatus+25)    
+       
      return response.data 
     })
     const promises = data.results.map(async (pokemon)=>{
@@ -22,11 +22,16 @@ function Pokedex() {
   }
   
   function nextPage(){
-     
-     BuscarPokemons(pageStatus)   
+
+     BuscarPokemons(pageStatus) 
+     setPageStatus(pageStatus+25) 
+     console.log(pageStatus)
   }
-  function backPage(){
-    BuscarPokemons(pageStatus-50)   
+  function  backPage (){
+    BuscarPokemons(pageStatus)  
+    if(pageStatus === 0){null}else{
+    setPageStatus(pageStatus-25)
+    console.log(pageStatus)}
   }
   useEffect(() => {
     BuscarPokemons();
