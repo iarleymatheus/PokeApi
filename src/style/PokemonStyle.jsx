@@ -217,6 +217,7 @@ margin-top: 10%;
   }
 }
   
+
 }
 .pokemon-Cardfairy {
   border-radius: 30px;
@@ -240,11 +241,10 @@ margin-top: 10%;
     
   }
 }
-  
 }
-.pokemon-Cardfairy {
+.pokemon-Carddark {
   border-radius: 30px;
-  background-color:#EA1369 ;
+  background-color:#545669 ;
   width: 100%;
   height: 100%;
   display: flex;
@@ -255,7 +255,191 @@ margin-top: 10%;
   color: white;
   border-radius: 5px;
   text-align: center;
-  background-color:#951A44 ;
+  background-color:#040706 ;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Carddragon {
+  border-radius: 30px;
+  background-color:#545669 ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#040706 ;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardfighting{
+  border-radius: 30px;
+  background-color:#EF6138 ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#994023 ;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardflying{
+  border-radius: 30px;
+  background-color:#93B2C7 ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#4A677D ;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardghost{
+  border-radius: 30px;
+  background-color:#906790 ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#33336B ;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardice{
+  border-radius: 30px;
+  background-color:#84D0F5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #D6EFF9;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardpsychic{
+  border-radius: 30px;
+  background-color:#A52A6A;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #F81C91;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardrock{
+  border-radius: 30px;
+  background-color:#8B3E21;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #48180B;
+  display: inline-block;
+  justify-content: space-between;
+
+  .power1 {
+    display: inline-block;
+    
+  }
+}
+}
+.pokemon-Cardsteel{
+  border-radius: 30px;
+  background-color:#5F756D;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .power {
+  height: 19px;
+  width: 51px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #48BC94;
   display: inline-block;
   justify-content: space-between;
 
