@@ -46,24 +46,28 @@ function SearchPokemon() {
 
 export default SearchPokemon;
 const SearcheStyle = styled.div`
-width: 50%;
+width: 100%;
 display: flex;
-justify-content: center;
-height: 30%;
+justify-content: flex-start;
+height: 40%;
  .input-text{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    width: 50vh;
     display: inline-block;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 7px 0px 0px 7px;
     border: 0px;
-    background-color: yellow;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
     text-align: center;
     outline: 0;
     
  }
  
  .input-btn{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
     display: inline-block;
-    height: 2rem;
+    height: 2.5rem;
     width:2rem;
     border-radius: 0px 7px 7px 0px;
     border: 0px;

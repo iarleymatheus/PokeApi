@@ -42,9 +42,6 @@ function Pokedex() {
   return (
     <PokedexStyle>
       <div className="menu-pages">
-        <div>
-          <h1>Pokedex</h1>
-        </div>
         <div onClick={backPage}>anterior</div>
         <div onClick={nextPage}>Proximo</div>
       </div>
@@ -68,8 +65,9 @@ export default Pokedex;
 const PokedexStyle = styled.div`
   padding: 20px;
   .menu-pages {
+    height: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
   }
   .pokemons {
     display: grid;

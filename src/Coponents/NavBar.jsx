@@ -23,16 +23,18 @@ function NavBar() {
 export default NavBar;
 
 const NavBarStyle = styled.nav`
-height: 10vh;
+height:10vh;
 width: 100%;
 display: fixed;
-justify-content: space-between;
+justify-content: flex-start;
 align-items: center;
-background-color:#8ECAE6 ;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   .nav-img{
+    margin-right: 40px;
     display: inline-block;
     height: 7vh;
-    padding: 5px;
+    padding: 10px;
   }
   @media (max-width: 600px){
     .nav-img{

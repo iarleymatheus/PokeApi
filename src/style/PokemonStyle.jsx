@@ -27,7 +27,9 @@ margin-top: 10%;
 
 .pokemon-Cardfire {
   border-radius: 30px;
-  background-color:#FD4C5A ;
+  background: rgb(253,76,90);
+  background: linear-gradient(90deg, rgba(253,76,90,1) 0%, rgba(171,31,35,1) 55%);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
   display: flex;
@@ -50,8 +52,10 @@ margin-top: 10%;
   
 }
 .pokemon-Cardgrass {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color: #27cb4f;
+  background: rgb(39,203,79);
+  background: linear-gradient(90deg, rgba(39,203,79,1) 0%, rgba(20,123,60,1) 60%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -75,8 +79,10 @@ margin-top: 10%;
 
 
 .pokemon-Cardwater {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#86A8FC ;
+  background: rgb(134,168,252);
+  background: linear-gradient(90deg, rgba(134,168,252,1) 0%, rgba(21,82,226,1) 60%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -99,8 +105,10 @@ margin-top: 10%;
   
 }
 .pokemon-Cardbug {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#3B9950 ;
+  background: rgb(28,76,37);
+  background: linear-gradient(90deg, rgba(28,76,37,1) 0%, rgba(27,99,40,1) 44%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -123,8 +131,10 @@ margin-top: 10%;
   
 }
 .pokemon-Cardnormal {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#CA98A7 ;
+  background: rgb(202,152,167);
+  background: linear-gradient(90deg, rgba(202,152,167,1) 0%, rgba(115,82,91,1) 60%);;
   width: 100%;
   height: 100%;
   display: flex;
@@ -147,8 +157,10 @@ margin-top: 10%;
   
 }
 .pokemon-Cardpoison {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#9B69D6 ;
+  background: rgb(155,105,214);
+  background: linear-gradient(90deg, rgba(155,105,214,1) 0%, rgba(94,45,136,1) 60%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -171,8 +183,10 @@ margin-top: 10%;
   
 }
 .pokemon-Cardelectric {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#FBFB72 ;
+  background: rgb(251,251,114);
+  background: linear-gradient(90deg, rgba(251,251,114,1) 0%, rgba(149,149,39,1) 61%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -195,8 +209,10 @@ margin-top: 10%;
   
 }
 .pokemon-Cardground {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#A9702C ;
+  background: rgb(169,112,44);
+  background: linear-gradient(90deg, rgba(169,112,44,1) 0%, rgba(110,73,31,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -220,8 +236,10 @@ margin-top: 10%;
 
 }
 .pokemon-Cardfairy {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#EA1369 ;
+  background: rgb(234,19,105);
+  background: linear-gradient(90deg, rgba(234,19,105,1) 0%, rgba(149,26,68,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -243,8 +261,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Carddark {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#545669 ;
+  background: rgb(84,86,105);
+  background: linear-gradient(90deg, rgba(84,86,105,1) 0%, rgba(4,7,6,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -266,8 +286,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Carddragon {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#545669 ;
+  background: rgb(68,139,149);
+  background: linear-gradient(90deg, rgba(68,139,149,1) 0%, rgba(96,203,217,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -278,7 +300,7 @@ margin-top: 10%;
   color: white;
   border-radius: 5px;
   text-align: center;
-  background-color:#040706 ;
+  background-color:#60CBD9;
   display: inline-block;
   justify-content: space-between;
 
@@ -289,8 +311,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardfighting{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#EF6138 ;
+  background: rgb(239,97,56);
+  background: linear-gradient(90deg, rgba(239,97,56,1) 0%, rgba(153,64,35,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -312,8 +336,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardflying{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#93B2C7 ;
+  background: rgb(147,178,199);
+  background: linear-gradient(90deg, rgba(147,178,199,1) 0%, rgba(74,103,125,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -335,8 +361,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardghost{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#906790 ;
+  background: rgb(144,103,144);
+  background: linear-gradient(90deg, rgba(144,103,144,1) 0%, rgba(51,51,107,1) 64%);;
   width: 100%;
   height: 100%;
   display: flex;
@@ -358,8 +386,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardice{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#84D0F5;
+  background: rgb(132,208,245);
+  background: linear-gradient(90deg, rgba(132,208,245,1) 0%, rgba(214,239,249,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -381,8 +411,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardpsychic{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#A52A6A;
+  background: rgb(165,42,106);
+  background: linear-gradient(90deg, rgba(165,42,106,1) 0%, rgba(248,28,145,1) 64%);;
   width: 100%;
   height: 100%;
   display: flex;
@@ -404,8 +436,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardrock{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#8B3E21;
+  background: rgb(139,62,33);
+  background: linear-gradient(90deg, rgba(139,62,33,1) 0%, rgba(72,24,11,1) 64%);;
   width: 100%;
   height: 100%;
   display: flex;
@@ -427,8 +461,10 @@ margin-top: 10%;
 }
 }
 .pokemon-Cardsteel{
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  background-color:#5F756D;
+  background: rgb(95,117,109);
+  background: linear-gradient(90deg, rgba(95,117,109,1) 0%, rgba(72,188,148,1) 64%);
   width: 100%;
   height: 100%;
   display: flex;
