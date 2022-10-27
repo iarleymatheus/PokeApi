@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import CardPokemon from "./CardPokemon";
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import { AiOutlineDoubleLeft } from "react-icons/ai";
 
 function Pokedex() {
   const [Pokemons, setPokemons] = useState([]);
@@ -42,8 +44,8 @@ function Pokedex() {
   return (
     <PokedexStyle>
       <div className="menu-pages">
-        <div onClick={backPage}>anterior</div>
-        <div onClick={nextPage}>Proximo</div>
+        <div className="arrow" onClick={backPage}>{<AiOutlineDoubleLeft />}</div>
+        <div className="arrow" onClick={nextPage}>{<AiOutlineDoubleRight />}</div>
       </div>
       <div className="pokemons">
         {!Pokemons ? (
@@ -63,11 +65,23 @@ function Pokedex() {
 export default Pokedex;
 
 const PokedexStyle = styled.div`
-  padding: 20px;
+  padding: 10px;
+
   .menu-pages {
     height: 2rem;
     display: flex;
-    justify-content: left;
+    width: 50px;
+    justify-content: space-between;
+    margin-bottom:1.2rem;
+    margin-left: 5px;
+     }
+  svg{
+     color: white;
+     height: 60px;
+  }
+  svg:hover{
+    width: 20px;
+    text-decoration: overline;
   }
   .pokemons {
     display: grid;
