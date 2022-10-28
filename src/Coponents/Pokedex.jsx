@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import CardPokemon from "./CardPokemon";
-import { AiOutlineDoubleRight } from "react-icons/ai";
-import { AiOutlineDoubleLeft } from "react-icons/ai";
+import Page from './Page';
+
 
 function Pokedex() {
+  const [page, setpage] = useState(0)
+  const [totalPages, settotalPages] = useState(0)
   const [Pokemons, setPokemons] = useState([]);
-  const [pageStatus, setPageStatus] = useState(0);
 
-  const BuscarPokemons = async (offset = pageStatus, limit = 25) => {
+  const intensPerPage = 30;
+  const BuscarPokemons = async (offset= intensPerPage * page, limit = intensPerPage) => {
+   
     const data = await axios
       .get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`)
       .then((response) => {
@@ -21,32 +24,34 @@ function Pokedex() {
     const results = await Promise.all(promises);
     setPokemons(results);
     console.log(results);
+    settotalPages(Math.ceil(data.count / intensPerPage))
   };
+  function LeftClick(){
+     if(page > 0){
+      setpage(page-1);
+     }
+  }
+  function RightClick(){
+     if(page+1 !== totalPages){
+      setpage(page+1)
+     }
+  }
 
-  function nextPage() {
-    BuscarPokemons(pageStatus);
-    setPageStatus(pageStatus + 25);
-    console.log(pageStatus);
-  }
-  function backPage() {
-    BuscarPokemons(pageStatus);
-    if (pageStatus === 0) {
-      null;
-    } else {
-      setPageStatus(pageStatus - 25);
-      console.log(pageStatus);
-    }
-  }
   useEffect(() => {
     BuscarPokemons();
     console.log("carregou");
-  }, []);
+  }, [page]);
+
+
   return (
     <PokedexStyle>
-      <div className="menu-pages">
-        <div className="arrow" onClick={backPage}>{<AiOutlineDoubleLeft />}</div>
-        <div className="arrow" onClick={nextPage}>{<AiOutlineDoubleRight />}</div>
-      </div>
+      <Page
+      page={page+1}
+      totalPages={totalPages}
+      LeftClick={LeftClick}
+      RightClick={RightClick}
+      
+      />
       <div className="pokemons">
         {!Pokemons ? (
           <div>
@@ -67,22 +72,6 @@ export default Pokedex;
 const PokedexStyle = styled.div`
   padding: 10px;
 
-  .menu-pages {
-    height: 2rem;
-    display: flex;
-    width: 50px;
-    justify-content: space-between;
-    margin-bottom:1.2rem;
-    margin-left: 5px;
-     }
-  svg{
-     color: white;
-     height: 60px;
-  }
-  svg:hover{
-    width: 20px;
-    text-decoration: overline;
-  }
   .pokemons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
