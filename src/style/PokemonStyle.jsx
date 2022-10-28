@@ -8,9 +8,9 @@ border-radius: 30px;
 color: white;
 .div-img {
     display: inline-block;
-    animation: mymove1 2s infinite;
+    animation: mymove1 1s infinite;
     img{
-        width: 14vh;
+        width: 16vh;
     }
 }
 @keyframes mymove1{
@@ -24,7 +24,6 @@ display: inline-block;
 margin-top: 10%;
 
 }
-
 .pokemon-Cardfire {
   border-radius: 30px;
   background: rgb(253,76,90);
@@ -36,7 +35,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -62,7 +61,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -89,7 +88,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -115,7 +114,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -141,7 +140,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -167,7 +166,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -193,7 +192,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -219,7 +218,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -246,7 +245,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -271,7 +270,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -296,7 +295,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -321,7 +320,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -346,7 +345,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -371,7 +370,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -396,7 +395,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -421,7 +420,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -446,7 +445,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -471,7 +470,7 @@ margin-top: 10%;
   justify-content: space-evenly;
   .power {
   height: 19px;
-  width: 51px;
+  width: 55px;
   color: white;
   border-radius: 5px;
   text-align: center;

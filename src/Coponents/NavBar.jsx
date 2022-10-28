@@ -32,8 +32,9 @@ background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   .nav-img{
     margin-right: 40px;
+    margin-left: 5vh;
     display: inline-block;
-    height: 7vh;
+    height: 9vh;
     padding: 10px;
   }
   @media (max-width: 600px){

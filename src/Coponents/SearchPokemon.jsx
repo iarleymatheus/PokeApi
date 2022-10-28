@@ -49,7 +49,8 @@ const SearcheStyle = styled.div`
 width: 100%;
 display: flex;
 justify-content: flex-start;
-height: 40%;
+height: 50%;
+margin-left: 5vh;
  .input-text{
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
     width: 50vh;
