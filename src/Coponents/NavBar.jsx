@@ -34,12 +34,12 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     margin-right: 40px;
     margin-left: 5vh;
     display: inline-block;
-    height: 9vh;
-    padding: 10px;
+    height: 5vh;
+    padding: 1px;
   }
   @media (max-width: 600px){
     .nav-img{
-      height: 5vh;
+      height: 3vh;
     }
   }
 `;

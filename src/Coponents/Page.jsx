@@ -46,7 +46,8 @@ margin-bottom: 2vh;
 
 svg{
   width: 5vh;
-  height:3vh}
-
+  height:2vh
+    
+}
 
 `;

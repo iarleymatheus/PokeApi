@@ -53,7 +53,7 @@ height: 50%;
 margin-left: 5vh;
  .input-text{
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
-    width: 50vh;
+    width: 30vh;
     display: inline-block;
     height: 2.5rem;
     border-radius: 7px 0px 0px 7px;

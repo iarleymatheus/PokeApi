@@ -3,7 +3,7 @@ import styled from "styled-components";;
 const PokemonStyle = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 font-family: 'Noto Sans JP', sans-serif;
-height: 160px;
+height: 180px;
 border-radius: 30px;
 color: white;
 .div-img {
