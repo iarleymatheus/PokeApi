@@ -6,6 +6,11 @@ font-family: 'Noto Sans JP', sans-serif;
 height: 180px;
 border-radius: 30px;
 color: white;
+box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+:hover{
+  box-shadow: 6px 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
 .div-img {
     display: inline-block;
     animation: mymove1 1s infinite;
@@ -28,7 +33,7 @@ margin-top: 10%;
   border-radius: 30px;
   background: rgb(253,76,90);
   background: linear-gradient(90deg, rgba(253,76,90,1) 0%, rgba(171,31,35,1) 55%);
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  
   width: 100%;
   height: 100%;
   display: flex;
@@ -48,7 +53,6 @@ margin-top: 10%;
     
   }
 }
-  
 }
 .pokemon-Cardgrass {
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);

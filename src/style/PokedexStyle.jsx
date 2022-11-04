@@ -5,7 +5,7 @@ const PokedexStyle = styled.div`
   .pokemons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 15px;
     grid-row-gap: 2em;
   }
   @media (max-width: 800px) {
