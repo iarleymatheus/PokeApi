@@ -1,21 +1,29 @@
 import React,{useState} from "react";
 import PokemonStyle from "../style/PokemonStyle";
+import PokemonModal from "./PokemonModal";
 
 
 function CardPokemon(props) {
   const { pokemon } = props;
-  
+  const [openModal, setOpenModal] = useState(false)
+  const [cardClose, setcardClose] = useState(false)
   
   
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-
+  function ShowModal(){
+    setOpenModal(true)
+    setcardClose(true)
+  }
   return (
     <div className="container-pokedex">
+   
+   {
+    !cardClose ? (
     <PokemonStyle key={pokemon.id}>
-      <div  key={pokemon.id} className={`pokemon-Card${pokemon.types[0].type.name}`}>
+      <div onClick={ShowModal} key={pokemon.id} className={`pokemon-Card${pokemon.types[0].type.name}`}>
         <div className="pokemon-info">
           <h3>{`#00${pokemon.id}`}</h3>
           <h3>{capitalizeFirstLetter(pokemon.name)}</h3>
@@ -30,8 +38,9 @@ function CardPokemon(props) {
         </div>
       </div>
       
-    </PokemonStyle >;
-    
+    </PokemonStyle >) :
+    <PokemonModal open={openModal} />
+  }
     </div>
     
   );

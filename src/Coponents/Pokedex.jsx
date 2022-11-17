@@ -1,20 +1,13 @@
-import React,{useState} from "react";
+import React from "react";
 import CardPokemon from "./CardPokemon";
 import Page from "./Page";
 import PokedexStyle from "../style/PokedexStyle";
-import PokemonModal from "./PokemonModal";
-
 
 function Pokedex(props) {
 
   const {page,totalPages,Pokemons,LeftClick,RightClick} = props;
-  const [open, setOpen] = useState(false)
-  const [NamePokemon, setNamePokemon] = useState('')
   
-  function showModal(namePokemon){
-       setOpen(true)
-       setNamePokemon(namePokemon)
-  }
+  
   return (
     <PokedexStyle>
       <Page
@@ -31,13 +24,17 @@ function Pokedex(props) {
         ) :
         (
           Pokemons.map((pokemon) => {
-            return <CardPokemon  key={pokemon.id} pokemon={pokemon} />
+            return <CardPokemon   key={pokemon.id} pokemon={pokemon} />
           })
+          
         )
+        
         }
       </div>
+      
     </PokedexStyle>
-       
+    
+     
   )
 }
 

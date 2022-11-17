@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
 
 
-function PokemonModal({open,NamePokemon}) {
- if(NamePokemon) axios.get(`https://pokeapi.co/api/v2/pokemon/${NamePokemon}`).then((response)=>{
-    console.log(response)
-  })
-  if(!open) return null 
+function PokemonModal({open}) {
+  if(!open) null
+  else
     return (
-
     <ModalStyle>
         <div className="ModalContainer">
             
