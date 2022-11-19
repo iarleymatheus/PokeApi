@@ -1,26 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-
-function PokemonModal({open}) {
-  if(!open) null
+function PokemonModal({ open, Data }) {
+  
+  if (!open) null;
   else
+  console.log(`Dado dentro do componente${name}`)
     return (
-    <ModalStyle>
-        <div className="ModalContainer">
-            
-
-     
-        </div>
-    </ModalStyle>
-  )
+      <ModalStyle>
+       <h1>{Data.name}</h1>
+      </ModalStyle>
+    );
 }
 
 export default PokemonModal;
 const ModalStyle = styled.div`
-position: relative;
-z-index:3;
-width: 100%;
-height: 100vh;
-background-color: black;
+  h1{
+    color:white;
+  }
+  display: flex;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 `;
