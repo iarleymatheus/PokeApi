@@ -23,7 +23,7 @@ function NavBar() {
 export default NavBar;
 
 const NavBarStyle = styled.nav`
-height:10vh;
+height:8vh;
 width: 100%;
 display: fixed;
 justify-content: flex-start;
@@ -33,6 +33,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   .nav-img{
     margin-right: 40px;
     margin-left: 5vh;
+    margin-top: 1vh;
     display: inline-block;
     height: 5vh;
     padding: 1px;

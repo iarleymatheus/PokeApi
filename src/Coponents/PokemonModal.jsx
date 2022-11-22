@@ -19,8 +19,10 @@ const ModalStyle = styled.div`
     color:white;
   }
   display: flex;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: black;
 `;
