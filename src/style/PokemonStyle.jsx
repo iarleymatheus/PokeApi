@@ -9,15 +9,25 @@ color: white;
 box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
 :hover{
   box-shadow: 6px 6px 6px 4px rgba(0, 0, 0, 0.2);
+  animation: swing 1.5s;
+  
 }
-
 .div-img {
     display: inline-block;
-    animation: mymove1 1s infinite;
+    animation: mymove1 1.5s infinite;
     img{
-        width: 16vh;
+      box-sizing: border-box;
+        width: 12vh;
     }
+  
 }
+@keyframes swing { 
+   20% { transform: rotate(5deg); } 
+   40% { transform: rotate(-2.5deg); } 
+   60% { transform: rotate(1.5deg); } 
+   80% { transform: rotate(-2.5deg); } 
+   100% { transform: rotate(0deg); } 
+} 
 @keyframes mymove1{
   0%   {margin-top:8%}
   50%  {margin-top:10%}

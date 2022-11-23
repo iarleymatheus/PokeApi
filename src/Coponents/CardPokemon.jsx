@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import PokemonStyle from "../style/PokemonStyle";
+import 'animate.css';
+
+
 
 function CardPokemon(props) {
   const { pokemon, DataPokemon } = props;
+  const [Ative, setAtive] = useState(true)
   
 
   function capitalizeFirstLetter(string) {
@@ -11,11 +15,16 @@ function CardPokemon(props) {
   const ReturnData = ()=>{
      DataPokemon(pokemon)
   }
-
+  function OnLoad(){
+    setTimeout(() => {
+      setAtive(false);
+    }, 1000)
+  }
+ 
   return (
-    <div onClick={ReturnData} className="container-pokedex">
+    <div onClick={ReturnData} className="container-pokedex ">
       {
-        <PokemonStyle key={pokemon.id}>
+        <PokemonStyle onLoad={OnLoad} className={Ative ? "animate__animated animate__backInDown ":''} key={pokemon.id}>
           <div
             key={pokemon.id}
             className={`pokemon-Card${pokemon.types[0].type.name}`}
