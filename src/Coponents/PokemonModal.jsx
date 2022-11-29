@@ -6,9 +6,8 @@ function PokemonModal({ open, Data }) {
   
   if (!open) null;
   else
-  console.log(`Dado dentro do componente${name}`)
     return (
-      <ModalStyle className="animate__animated animate__bounceInDown">
+      <ModalStyle className="animate__animated animate__backInLeft">
        <h1>{Data.name}</h1>
       </ModalStyle>
     );
@@ -26,5 +25,5 @@ const ModalStyle = styled.div`
   z-index: 100;
   width: 100%;
   height: 100%;
-  background-color: #000000c5;
+  background-color: white;
 `;

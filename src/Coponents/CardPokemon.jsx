@@ -24,7 +24,7 @@ function CardPokemon(props) {
   return (
     <div onClick={ReturnData} className="container-pokedex ">
       {
-        <PokemonStyle onLoad={OnLoad} className={Ative ? "animate__animated animate__backInDown ":''} key={pokemon.id}>
+        <PokemonStyle onLoad={OnLoad} className={Ative ? "animate__animated animate__backInDown":''} key={pokemon.id}>
           <div
             key={pokemon.id}
             className={`pokemon-Card${pokemon.types[0].type.name}`}
