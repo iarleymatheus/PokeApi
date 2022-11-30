@@ -3,13 +3,10 @@ import styled from "styled-components";
 import 'animate.css'
 
 function PokemonModal({ open, Data }) {
-  if (!open) null;
-  else console.log(Data);
-
-  console.log(Data)
+  if (open,Data)
     return (
       <ModalStyle  >
-       <h1>Teste</h1>
+       <h1>{Data.types[0].type.name}</h1>
       </ModalStyle>
       
     );

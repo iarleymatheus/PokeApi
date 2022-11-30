@@ -15,6 +15,7 @@ function Pokedex(props) {
   }
   useEffect(()=>{
       PokemonSingleData()
+      console.log(PokemonSinglePage)
   
   },[])
 
