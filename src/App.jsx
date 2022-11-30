@@ -29,7 +29,6 @@ function App() {
     });
     const results = await Promise.all(promises);
     setPokemons(results);
-    console.log(results);
     settotalPages(Math.ceil(data.count / intensPerPage));
   };
  
