@@ -5,7 +5,7 @@ import 'animate.css';
 
 
 function CardPokemon(props) {
-  const { pokemon, DataPokemon } = props;
+  const {pokemon, DataPokemon } = props;
   const [Ative, setAtive] = useState(true)
   
 

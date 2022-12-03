@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import 'animate.css'
+import 'animate.css';
 
-function PokemonModal({ open, Data }) {
-  if (open,Data)
-    return (
-      <ModalStyle  >
-       <h1>{Data.types[0].type.name}</h1>
-      </ModalStyle>
-      
-    );
-}
+function PokemonModal({Data}) {
+
+
+  return (
+   <ModalStyle>
+   {Data ? <div>
+    <h1>{Data.name}</h1>
+    <h2>{Data.id}</h2>
+    <h2>{Data.height}</h2>
+   </div> : null} 
+   </ModalStyle> 
+    
+  )}
+  
+
 
 export default PokemonModal;
 const ModalStyle = styled.div`

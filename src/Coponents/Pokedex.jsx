@@ -7,16 +7,14 @@ import { useEffect } from "react";
 
 function Pokedex(props) {
   const { page, totalPages, Pokemons, LeftClick, RightClick } = props;
-  const [openModal, setOpenModal] = useState(false);
   const [PokemonSinglePage, setPokemonSinglePage] = useState([]);
   
+  
   const PokemonSingleData = async (pokemonSingle)=>{
-   await setPokemonSinglePage(pokemonSingle)
-  }
+     setPokemonSinglePage(pokemonSingle)
+}
   useEffect(()=>{
       PokemonSingleData()
-      console.log(PokemonSinglePage)
-  
   },[])
 
   return (
@@ -41,7 +39,7 @@ function Pokedex(props) {
         </div>
       </PokedexStyle>
       { PokemonSinglePage? 
-      (<PokemonModal open={openModal} Data={PokemonSinglePage} />) 
+      (<PokemonModal  Data={PokemonSinglePage} />) 
         
 
                                                      : null
